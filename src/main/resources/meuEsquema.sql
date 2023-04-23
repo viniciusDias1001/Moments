@@ -11,7 +11,27 @@ CREATE TABLE EMAIL_USUARIO_SUCCESS (
   id INT NOT NULL AUTO_INCREMENT,
   email VARCHAR(200) NOT NULL,
   senha VARCHAR(200) NOT NULL,
-  admin BOOLEAN NOT NULL DEFAULT FALSE,
   PRIMARY KEY (id),
   UNIQUE KEY (email)
+);
+
+
+CREATE TABLE Foto (
+  foto_id INT NOT NULL AUTO_INCREMENT,
+  titulo VARCHAR(255) NOT NULL,
+  dataFoto DATE NOT NULL,
+  localizacao VARCHAR(255) NOT NULL,
+  descricao VARCHAR(255),
+  album_id INT NOT NULL,
+  PRIMARY KEY (foto_id),
+  FOREIGN KEY (album_id) REFERENCES Album(id)
+);
+
+
+CREATE TABLE Album (
+  id INT NOT NULL AUTO_INCREMENT,
+  nome_Album VARCHAR(255) NOT NULL,
+  descricao VARCHAR(255),
+  data_criacao DATE NOT NULL,
+  PRIMARY KEY (id)
 );

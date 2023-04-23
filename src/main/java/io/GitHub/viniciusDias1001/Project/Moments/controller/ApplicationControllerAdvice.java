@@ -1,6 +1,7 @@
 package io.GitHub.viniciusDias1001.Project.Moments.controller;
 
 import io.GitHub.viniciusDias1001.Project.Moments.erros.ApiErros;
+import io.GitHub.viniciusDias1001.Project.Moments.exception.FotoNotFoudException;
 import io.GitHub.viniciusDias1001.Project.Moments.exception.UserNotFoudException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -27,8 +28,16 @@ public class ApplicationControllerAdvice {
 
     @ExceptionHandler(UserNotFoudException.class)
     @ResponseBody
-    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
     public ApiErros handUserNotFoudExceptions(UserNotFoudException ex){
+        String msgErro = ex.getMessage();
+        return new ApiErros(msgErro);
+    }
+
+    @ExceptionHandler(FotoNotFoudException.class)
+    @ResponseBody
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public ApiErros handFotoNotFoudExceptions(FotoNotFoudException ex){
         String msgErro = ex.getMessage();
         return new ApiErros(msgErro);
     }

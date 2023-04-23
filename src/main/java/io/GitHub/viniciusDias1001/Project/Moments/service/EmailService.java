@@ -22,6 +22,7 @@ import java.io.InputStream;
 import java.nio.file.Files;
 import java.time.LocalDateTime;
 import java.util.Base64;
+import java.util.Date;
 
 @Service
 
@@ -44,8 +45,9 @@ public class EmailService {
             emailModel.setStatusEmail(StatusEmail.SENT);
             message.setFrom("pedrorochadias1001@gmail.com");
             message.setTo(user.getEmail());
-            message.setSubject("Bem Vindo ao Moments");
+            message.setSubject("Bem Vindo ao Moments :) ");
             message.setText("Bem vindo  " + user.getEmail() + "   Espero que Você possa Guardar não só no seu coração  aqueles  Lindos Momentos mas sim aqui no Moments " + PhotoinString());
+            message.setSentDate(new Date());
             emailSender.send(message);
 
 
@@ -58,7 +60,7 @@ public class EmailService {
 
 
     public String PhotoinString() throws IOException {
-        File file = new File("Project Moments-Back\\pedro.jpg");
+        File file = new File("C:\\Users\\pedro\\IdeaProjects\\Project Moments-Back\\src\\main\\java\\io\\GitHub\\viniciusDias1001\\Project\\Moments\\photos\\pedro.jpg");
         byte[] imageBytes = Files.readAllBytes(file.toPath());
         String base64String = Base64.getEncoder().encodeToString(imageBytes);
         return base64String;

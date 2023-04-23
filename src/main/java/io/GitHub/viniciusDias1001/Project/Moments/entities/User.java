@@ -3,6 +3,7 @@ package io.GitHub.viniciusDias1001.Project.Moments.entities;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -30,5 +31,6 @@ public class User {
     private String senha;
 
     @Column
+    @NotBlank(message = "Campo admin deve ser preenchido")
     private boolean admin;
 }

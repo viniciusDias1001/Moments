@@ -11,11 +11,10 @@ CREATE TABLE user (
 );
 
 CREATE TABLE EMAIL_USUARIO_SUCCESS (
-  id INT NOT NULL AUTO_INCREMENT,
-  emailId VARCHAR(200) NOT NULL,
+  emailId INT NOT NULL AUTO_INCREMENT,
+  dataa DATETIME NOT NULL,
   STATUS VARCHAR(20)
   PRIMARY KEY (id),
-  UNIQUE KEY (email)
 );
 
 
@@ -25,7 +24,8 @@ CREATE TABLE Foto (
   data DATE NOT NULL,
   localizacao VARCHAR(255) NOT NULL,
   descricao VARCHAR(255),
-  PRIMARY KEY (foto_id)
+  PRIMARY KEY (foto_id),
+  FOREIGN KEY (album_id) REFERENCES Album(id)
 );
 
 

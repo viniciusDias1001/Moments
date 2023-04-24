@@ -24,21 +24,21 @@ public class Foto {
     private Integer id;
 
     @Column(name = "titulo",nullable = false)
-    @NotEmpty
+    @NotEmpty(message = "O campo Titulo deve não pode ser vazio")
     private String titulo;
 
     @Column(name = "data",nullable = false)
     private LocalDate data;
 
     @Column(name = "localizacao",nullable = false)
-    @NotEmpty
+    @NotEmpty(message = "O campo localização deve não pode ser vazio")
     private String localizacao;
 
     @Column(name = "descricao")
-    @NotEmpty
+    @NotEmpty(message = "O campo descricao deve não pode ser vazio")
     private String descricao;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "album_id")
     private Album album;
 

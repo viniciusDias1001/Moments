@@ -1,6 +1,7 @@
 package io.GitHub.viniciusDias1001.Project.Moments.controller;
 
 import io.GitHub.viniciusDias1001.Project.Moments.erros.ApiErros;
+import io.GitHub.viniciusDias1001.Project.Moments.exception.AlbumNaoEncontradoException;
 import io.GitHub.viniciusDias1001.Project.Moments.exception.FotoNotFoudException;
 import io.GitHub.viniciusDias1001.Project.Moments.exception.UserNotFoudException;
 import org.springframework.http.HttpStatus;
@@ -38,6 +39,14 @@ public class ApplicationControllerAdvice {
     @ResponseBody
     @ResponseStatus(HttpStatus.NOT_FOUND)
     public ApiErros handFotoNotFoudExceptions(FotoNotFoudException ex){
+        String msgErro = ex.getMessage();
+        return new ApiErros(msgErro);
+    }
+
+    @ExceptionHandler(AlbumNaoEncontradoException.class)
+    @ResponseBody
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public ApiErros handAlbumNotFoudExceptions(AlbumNaoEncontradoException ex){
         String msgErro = ex.getMessage();
         return new ApiErros(msgErro);
     }

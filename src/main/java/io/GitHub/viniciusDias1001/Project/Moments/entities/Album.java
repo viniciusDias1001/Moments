@@ -27,7 +27,7 @@ public class Album {
     private Integer id;
 
     @Column(name = "nome_Album", nullable = false)
-    @NotEmpty
+    @NotEmpty(message = "O campo nome deve não pode ser vazio")
     private String nome;
 
     @Column(name = "descricao")

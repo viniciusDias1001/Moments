@@ -1,6 +1,8 @@
 package io.GitHub.viniciusDias1001.Project.Moments.controller;
 
+import io.GitHub.viniciusDias1001.Project.Moments.entities.Album;
 import io.GitHub.viniciusDias1001.Project.Moments.entities.Foto;
+import io.GitHub.viniciusDias1001.Project.Moments.exception.AlbumNaoEncontradoException;
 import io.GitHub.viniciusDias1001.Project.Moments.repository.AlbumRepository;
 import io.GitHub.viniciusDias1001.Project.Moments.repository.FotoRepository;
 import jakarta.validation.Valid;
@@ -18,10 +20,13 @@ public class FotoController {
 
     private final FotoRepository fotoRepository;
 
+    private final AlbumRepository albumRepository;
+
 
 
     public FotoController(FotoRepository fotoRepository, AlbumRepository albumRepository) {
         this.fotoRepository = fotoRepository;
+        this.albumRepository = albumRepository;
 
     }
 
@@ -29,6 +34,9 @@ public class FotoController {
     @ResponseStatus(HttpStatus.CREATED)
     public Foto save(@RequestBody @Valid Foto foto){
         foto.setData(LocalDate.now());
+        Integer albumId = foto.getAlbum().getId();
+        Album album = albumRepository.findById(albumId).orElseThrow(() -> new AlbumNaoEncontradoException("Álbum não encontrado"));
+        foto.setAlbum(album);
         return fotoRepository.save(foto);
     }
 

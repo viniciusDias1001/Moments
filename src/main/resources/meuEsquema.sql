@@ -1,3 +1,6 @@
+create database moments
+
+
 CREATE TABLE user (
   id INT NOT NULL AUTO_INCREMENT,
   email VARCHAR(200) NOT NULL,
@@ -22,9 +25,7 @@ CREATE TABLE Foto (
   data DATE NOT NULL,
   localizacao VARCHAR(255) NOT NULL,
   descricao VARCHAR(255),
-  album_id INT NOT NULL,
-  PRIMARY KEY (foto_id),
-  FOREIGN KEY (album_id) REFERENCES Album(id)
+  PRIMARY KEY (foto_id)
 );
 
 

@@ -19,15 +19,15 @@ CREATE TABLE EMAIL_USUARIO_SUCCESS (
 
 
 CREATE TABLE Foto (
-  id INT NOT NULL AUTO_INCREMENT,
-  titulo VARCHAR(255) NOT NULL,
-  data DATE NOT NULL,
-  localizacao VARCHAR(255) NOT NULL,
-  descricao VARCHAR(255),
-  PRIMARY KEY (foto_id),
-  FOREIGN KEY (album_id) REFERENCES Album(id)
+    id INT NOT NULL AUTO_INCREMENT,
+    titulo VARCHAR(255) NOT NULL,
+    data DATE NOT NULL,
+    localizacao VARCHAR(255) NOT NULL,
+    descricao VARCHAR(255) NOT NULL,
+    album_id INT,
+    PRIMARY KEY (id),
+    CONSTRAINT fk_album FOREIGN KEY (album_id) REFERENCES Album(id)
 );
-
 
 CREATE TABLE Album (
   id INT NOT NULL AUTO_INCREMENT,

@@ -46,7 +46,7 @@ public class EmailService {
             message.setFrom("pedrorochadias1001@gmail.com");
             message.setTo(user.getEmail());
             message.setSubject("Bem Vindo ao Moments :) ");
-            message.setText("Bem vindo  " + user.getEmail() + "   Espero que Você possa Guardar não só no seu coração  aqueles  Lindos Momentos mas sim aqui no Moments " + PhotoinString());
+            message.setText("Bem vindo  " + user.getEmail() + "   Espero que Você possa Guardar não só no seu coração  aqueles  Lindos Momentos mas sim aqui no Moments ");
             message.setSentDate(new Date());
             emailSender.send(message);
 

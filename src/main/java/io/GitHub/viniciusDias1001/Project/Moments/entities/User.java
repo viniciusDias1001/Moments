@@ -31,6 +31,5 @@ public class User {
     private String senha;
 
     @Column
-    @NotBlank(message = "Campo admin deve ser preenchido")
     private boolean admin;
 }

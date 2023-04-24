@@ -21,6 +21,10 @@ public class User {
     @Column(name = "ID")
     private Integer id;
 
+    @Column(name = "nome")
+    @NotEmpty
+    private String nome;
+
     @Column(name = "email", length = 200)
     @NotEmpty(message = "Informe o email, atributo não pode ser Vazio/Nulo")
     @Email(message = "Informe um Email Válido.")
@@ -30,6 +34,4 @@ public class User {
     @NotEmpty(message = "Campo senha não pode ser Vázio")
     private String senha;
 
-    @Column
-    private boolean admin;
 }

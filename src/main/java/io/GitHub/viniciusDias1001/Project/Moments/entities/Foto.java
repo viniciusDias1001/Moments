@@ -35,6 +35,7 @@ public class Foto {
     private String localizacao;
 
     @Column(name = "descricao")
+    @NotEmpty
     private String descricao;
 
     @ManyToOne(fetch = FetchType.LAZY)

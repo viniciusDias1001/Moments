@@ -18,11 +18,11 @@ public class FotoController {
 
     private final FotoRepository fotoRepository;
 
-    private final AlbumRepository albumRepository;
+
 
     public FotoController(FotoRepository fotoRepository, AlbumRepository albumRepository) {
         this.fotoRepository = fotoRepository;
-        this.albumRepository = albumRepository;
+
     }
 
     @PostMapping

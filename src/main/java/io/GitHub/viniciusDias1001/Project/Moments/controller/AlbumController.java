@@ -15,6 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("api/album")
+@CrossOrigin(origins = "*")
 public class AlbumController {
 
     private final AlbumRepository albumRepository;

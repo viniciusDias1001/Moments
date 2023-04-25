@@ -16,6 +16,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/fotos")
+@CrossOrigin(origins = "*")
 public class FotoController {
 
     private final FotoRepository fotoRepository;

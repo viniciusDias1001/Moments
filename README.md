@@ -52,10 +52,12 @@ As seguintes ferramentas foram utilizadas durante o desenvolvimento do projeto:
 As seguintes tecnologias foram utilizadas durante o desenvolvimento do projeto:
 
 
-- JAVA | Version - (17)  <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/java_logo_icon_169553.png" width="20" height="20">
-- SPRING BOOT |  Version - (3.0.6)
+- JAVA | Version - (17)  ![Java](https://img.shields.io/badge/Java-17-blue?logo=java)
+
+- SPRING BOOT |  Version - (3.0.6) ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.6.3-brightgreen?logo=spring)
 - JPA / HIBERNATE
-- MAVEN
+
+- MAVEN ![Maven](https://img.shields.io/badge/Maven-3.8.3-blue?logo=apache-maven)
 
 
 

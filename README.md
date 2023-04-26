@@ -8,7 +8,7 @@
 ## **SOBRE O PROJETO**
 
 O Moments-BACK é um projeto em Spring Boot que utiliza tecnologias como JPA, Hibernate e Maven. Ele fornece uma API RESTful que permite criar, atualizar, ler e excluir (CRUD) informações sobre momentos (como fotos, mensagens e vídeos) em um banco de dados. Além disso, o projeto inclui recursos como autenticação básica, internacionalização e validação de entrada.
-
+***
 ## **ASSUNTOS TRABALHADOS E ESTUDADOS NO DECORRER DO PROJETO**
 
 - Criação e Entendimento de um Projeto Spring Boot e sua Arquitetura
@@ -35,7 +35,7 @@ O Moments-BACK é um projeto em Spring Boot que utiliza tecnologias como JPA, Hi
 - Relacionamento de Entidades
 - Testes Postman
 - Microservice e-mail
-
+***
 ## **FERRAMENTAS UTILIZADAS**
 
  As seguintes ferramentas foram utilizadas durante o desenvolvimento do projeto:
@@ -50,7 +50,7 @@ O Moments-BACK é um projeto em Spring Boot que utiliza tecnologias como JPA, Hi
 
 - ![MySQL Workbench](https://img.shields.io/badge/-MySQL%20Workbench-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
-
+***
 
 ## **TECNOLIGIAS UTILIZADAS**
 
@@ -72,13 +72,13 @@ As seguintes tecnologias foram utilizadas durante o desenvolvimento do projeto:
 - ![Maven](https://img.shields.io/badge/Maven-3.8.3-blue?logo=apache-maven)
 - ![MySQL Workbench](https://img.shields.io/badge/MySQL%20Workbench-8.0%20CE-blue)
 
-
+***
 ## **COMO RODAR PROJETO**
 
 
 <h7 align="center">1️⃣</h7> - Clone o projeto : https://github.com/viniciusDias1001/Moments.git
 
-<h7 align="center">2️⃣</h7> - Abra o projeto e instale as dependencias maven:
+<h7 align="center">2️⃣</h7> - Abra o projeto e instale as dependencias maven:  `mvn install`
 
 ![img.png](img.png)
 
@@ -87,20 +87,43 @@ As seguintes tecnologias foram utilizadas durante o desenvolvimento do projeto:
 
 - Crie o DataBase "moments"
 
-- Altere:  pring.datasource.username= e spring.datasource.password= 
+- Altere:   `pring.datasource.username` e `spring.datasource.password`
 
 ![img_1.png](img_1.png)
 
 
-<h7 align="center">4️⃣ </h7> - Ainda no  application.properties configure spring.mail , para mais detalhes sobre essa configuração : https://www.youtube.com/watch?v=ZBleZzJf6ro
+<h7 align="center">4️⃣ </h7> - Ainda no  `application.properties` configure spring.mail , para mais detalhes sobre essa configuração : 
 
-<h7 align="center">5️⃣</h7> - Crie as Tabelas no seu banco de dados. Script pronto no meuEsquema.sql
+
+
+
+
+![img_4.png](img_4.png)
+<a href="https://www.youtube.com/watch?v=ZBleZzJf6ro"><img src="https://img.shields.io/badge/Watch%20on-Youtube-red?style=for-the-badge&logo=youtube"></a>
+
+<h7 align="center">5️⃣</h7> - Crie as Tabelas no seu banco de dados. Script pronto no `meuEsquema.sql`
 
 ![img_3.png](img_3.png)
 
-<h7 align="center">6️⃣ </h7> - Siga para classe ProjectMomentsBackApplication.java e de run no metodo main:
+<h7 align="center">6️⃣ </h7> - Siga para classe `ProjectMomentsBackApplication.java` e de  [![Run in IntelliJ IDEA](https://img.shields.io/badge/Run%20in-IntelliJ%20IDEA-green?logo=intellij-idea)](https://www.jetbrains.com/idea/)
+no metodo main:
 
 ![img_2.png](img_2.png)
+
+---
+# Get in touch
+
+- [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/pedro-vinicius-8472351b7/)](https://www.linkedin.com/in/pedro-vinicius-8472351b7/)
+
+- <a href="mailto:pedrorochadias1001@gmail.com">
+  <img src="https://img.shields.io/badge/-Gmail-D14836?style=flat-square&logo=Gmail&logoColor=white" alt="Gmail">
+  </a>
+
+
+
+
+
+
 
 Esperamos que este projeto tenha sido útil para o seu aprendizado. Sinta-se à vontade para entrar em contato se tiver alguma dúvida ou sugestão de melhoria. Obrigado por ler!
 

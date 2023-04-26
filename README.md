@@ -1,6 +1,6 @@
 # Moments-BACK
 
-Projeto Criado para Discplina de Engenharia de Software, e com proposito de aprendizado.
+**Projeto Criado para Discplina de Engenharia de Software, e com proposito de aprendizado.**
 
 
 ![image](https://user-images.githubusercontent.com/105192228/234443198-73f9e496-1e1d-480e-8e26-9bfb82156c9b.png)
@@ -75,13 +75,15 @@ As seguintes tecnologias foram utilizadas durante o desenvolvimento do projeto:
 
 ## **COMO RODAR PROJETO**
 
-1- Clone o projeto : https://github.com/viniciusDias1001/Moments.git
 
-2 - Abra o projeto e instale as dependencias maven:
+<h7 align="center">1️⃣</h7> - Clone o projeto : https://github.com/viniciusDias1001/Moments.git
+
+<h7 align="center">2️⃣</h7> - Abra o projeto e instale as dependencias maven:
 
 ![img.png](img.png)
 
-3 - Vá em application.properties e altere as informações para seu banco de dados:
+
+<h7 align="center">3️⃣ </h7> - Vá em application.properties e altere as informações para seu banco de dados:
 
 - Crie o DataBase "moments"
 
@@ -89,13 +91,14 @@ As seguintes tecnologias foram utilizadas durante o desenvolvimento do projeto:
 
 ![img_1.png](img_1.png)
 
-4 - Ainda no  application.properties configure spring.mail , para mais detalhes sobre essa configuração : https://www.youtube.com/watch?v=ZBleZzJf6ro
 
-5 - Crie as Tabelas no seu banco de dados. Script pronto no meuEsquema.sql
+<h7 align="center">4️⃣ </h7> - Ainda no  application.properties configure spring.mail , para mais detalhes sobre essa configuração : https://www.youtube.com/watch?v=ZBleZzJf6ro
+
+<h7 align="center">5️⃣</h7> - Crie as Tabelas no seu banco de dados. Script pronto no meuEsquema.sql
 
 ![img_3.png](img_3.png)
 
-5 - Siga para classe ProjectMomentsBackApplication.java e de run no metodo main:
+<h7 align="center">6️⃣ </h7> - Siga para classe ProjectMomentsBackApplication.java e de run no metodo main:
 
 ![img_2.png](img_2.png)
 

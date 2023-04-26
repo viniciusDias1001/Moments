@@ -120,12 +120,11 @@ no metodo main:
   </a>
 
 
+---
+
+**PARA TER ACESSO AO FRONT DO PROJETO ACESSE:** https://github.com/Leandro-Oliveira-2/Moments
 
 
-
-
-
-Esperamos que este projeto tenha sido útil para o seu aprendizado. Sinta-se à vontade para entrar em contato se tiver alguma dúvida ou sugestão de melhoria. Obrigado por ler!
 
 
 

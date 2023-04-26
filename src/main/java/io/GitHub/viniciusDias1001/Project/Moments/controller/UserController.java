@@ -54,14 +54,14 @@ public class UserController {
         userService.delete(email);
     }
 
-    @GetMapping("{id}")
+    @GetMapping("{email}")
     @ResponseStatus(HttpStatus.OK)
-    public User getByid(@PathVariable Integer id){
+    public User getByid(@PathVariable String email){
         return userRepository
-                .findById(id)
+                .findByEmail(email).stream().findFirst()
                 .orElseThrow(() ->
                         new ResponseStatusException(HttpStatus.NOT_FOUND,
-                                "Foto not Foud in DB"));
+                                "User not Foud in DB"));
     }
 
 

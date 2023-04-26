@@ -5,11 +5,11 @@ Projeto Criado para Discplina de Engenharia de Software, e com proposito de apre
 
 ![image](https://user-images.githubusercontent.com/105192228/234443198-73f9e496-1e1d-480e-8e26-9bfb82156c9b.png)
 
-**SOBRE O PROJETO**
+## **SOBRE O PROJETO**
 
 O Moments-BACK é um projeto em Spring Boot que utiliza tecnologias como JPA, Hibernate e Maven. Ele fornece uma API RESTful que permite criar, atualizar, ler e excluir (CRUD) informações sobre momentos (como fotos, mensagens e vídeos) em um banco de dados. Além disso, o projeto inclui recursos como autenticação básica, internacionalização e validação de entrada.
 
-**ASSUNTOS TRABALHADOS E ESTUDADOS NO DECORRER DO PROJETO**
+## **ASSUNTOS TRABALHADOS E ESTUDADOS NO DECORRER DO PROJETO**
 
 - Criação e Entendimento de um Projeto Spring Boot e sua Arquitetura
 - Classes de Configuração e Servisos
@@ -36,38 +36,44 @@ O Moments-BACK é um projeto em Spring Boot que utiliza tecnologias como JPA, Hi
 - Testes Postman
 - Microservice e-mail
 
-**FERRAMENTAS UTILIZADAS**
+## **FERRAMENTAS UTILIZADAS**
 
-As seguintes ferramentas foram utilizadas durante o desenvolvimento do projeto:
-- Intellij Idea
-- Postman
-- CMD
-- MAVEN
-- Browser
-- MySql Workbench
+ As seguintes ferramentas foram utilizadas durante o desenvolvimento do projeto:
+- ![Intellij IDEA](https://img.shields.io/badge/IntelliJ%20Idea-2023-blueviolet.svg?style=for-the-badge&logo=intellij-idea
+  )
+- ![Postman](https://img.shields.io/badge/-Postman-FF6C37?logo=postman&logoColor=white&style=for-the-badge)
+
+- ![CMD](https://img.shields.io/badge/-CMD-000000?style=for-the-badge&logo=Windows%20Terminal&logoColor=FFFFFF)
+
+- ![Maven](https://img.shields.io/badge/Maven-3.8.3-blue?logo=apache-maven)
+- ![Google Chrome](https://img.shields.io/badge/-Google%20Chrome-4285F4?style=for-the-badge&logo=Google%20Chrome&logoColor=FFFFFF)
+
+- ![MySQL Workbench](https://img.shields.io/badge/-MySQL%20Workbench-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
 
-**TECNOLIGIAS UTILIZADAS**
+
+## **TECNOLIGIAS UTILIZADAS**
 
 As seguintes tecnologias foram utilizadas durante o desenvolvimento do projeto:
 
 
-- JAVA | Version - (17)  ![Java](https://img.shields.io/badge/Java-17-blue?logo=java)
+- ![Java](https://img.shields.io/badge/Java-17-blue?logo=java)
 
-- SPRING BOOT |  Version - (3.0.6) ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.6.3-brightgreen?logo=spring)
-- JPA / HIBERNATE
+-  ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.0.6-brightgreen?logo=spring)
+- ![JPA](https://img.shields.io/badge/JPA-Enabled-orange)
 
-- MAVEN ![Maven](https://img.shields.io/badge/Maven-3.8.3-blue?logo=apache-maven)
+-  ![Maven](https://img.shields.io/badge/Maven-3.8.3-blue?logo=apache-maven)
 
 
 
 **PRÉ-REQUISITOS PARA RODAR PROJETO**
-- JAVA | Version - (17)
-- SPRING BOOT |  Version - (3.0.6)
-- MAVEN | Version - (3.8.6) ou superior
-- MySQL Workbench 8.0 CE
+- ![Java](https://img.shields.io/badge/Java-17-blue?logo=java)
+- ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.0.6-brightgreen?logo=spring)
+- ![Maven](https://img.shields.io/badge/Maven-3.8.3-blue?logo=apache-maven)
+- ![MySQL Workbench](https://img.shields.io/badge/MySQL%20Workbench-8.0%20CE-blue)
 
-**COMO RODAR PROJETO**
+
+## **COMO RODAR PROJETO**
 
 1- Clone o projeto : https://github.com/viniciusDias1001/Moments.git
 

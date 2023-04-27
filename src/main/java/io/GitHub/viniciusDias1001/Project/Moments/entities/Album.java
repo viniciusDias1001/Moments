@@ -36,6 +36,9 @@ public class Album {
     @Column(name = "data_criacao", nullable = false)
     private LocalDate dataCriacao;
 
+    @Column(name = "chave")
+    private Integer chave;
+
     @OneToMany(mappedBy = "album")
     @JsonIgnore
     private List<Foto> fotos;

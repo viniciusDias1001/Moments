@@ -51,6 +51,16 @@ public class AlbumController {
                                 "Album not Foud in DB"));
     }
 
+    @GetMapping("chave/{chave}")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Album> findAllBy(@PathVariable Integer chave){
+        try {
+            return albumRepository.findAllByChave(chave);
+        } catch (ResponseStatusException exception){
+            throw  new ResponseStatusException(HttpStatus.NOT_FOUND);
+        }
+    }
+
     @PutMapping("{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void update( @PathVariable Integer id,

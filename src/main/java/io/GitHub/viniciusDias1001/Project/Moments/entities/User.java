@@ -34,4 +34,9 @@ public class User {
     @NotEmpty(message = "Campo senha não pode ser Vázio")
     private String senha;
 
+    @Column(name = "chave")
+    private Integer chave;
+
+
+
 }

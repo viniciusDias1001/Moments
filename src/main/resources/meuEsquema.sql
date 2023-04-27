@@ -34,5 +34,6 @@ CREATE TABLE Album (
   nome_Album VARCHAR(255) NOT NULL,
   descricao VARCHAR(255),
   data_criacao DATE NOT NULL,
+  chave INT not null,
   PRIMARY KEY (id)
 );

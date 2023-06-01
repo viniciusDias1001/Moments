@@ -10,6 +10,7 @@ public class ProjectMomentsBackApplication {
 		SpringApplication.run(ProjectMomentsBackApplication.class, args);
 
 		System.out.println("iae analia ");
+		System.out.println("Ta feito em, eu Leandro e Vinicius estamos indo almoçar!");
 	}
 
 

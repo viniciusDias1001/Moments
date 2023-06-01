@@ -8,6 +8,8 @@ public class ProjectMomentsBackApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ProjectMomentsBackApplication.class, args);
+
+		System.out.println("iae analia ");
 	}
 
 
